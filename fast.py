@@ -1,7 +1,7 @@
 # 1. Library imports
 import uvicorn
 from typing import List
-# from models import Test,  TableBdd, Data
+from models import IrisSpecies ,  Prediction
 from fastapi import FastAPI
 from fastapi.exceptions import HTTPException
 import pymysql
@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 import os
 import pickle
 import pandas as pd
-from Model import IrisModel, IrisSpecies
+from Model import IrisModel
 
 
 app = FastAPI()

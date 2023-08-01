@@ -5,12 +5,6 @@ from pydantic import BaseModel
 import joblib
 
 
-# 2. Class which describes a single flower measurements
-class IrisSpecies(BaseModel):
-    sepal_length: float
-    sepal_width: float
-    petal_length: float
-    petal_width: float
 
 
 # 3. Class for training the model and making predictions
