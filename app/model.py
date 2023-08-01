@@ -5,15 +5,13 @@ from pydantic import BaseModel
 import joblib
 
 
-
-
 # 3. Class for training the model and making predictions
 class IrisModel:
     # 6. Class constructor, loads the dataset and loads the model
     #    if exists. If not, calls the _train_model method and
     #    saves the model
     def __init__(self):
-        self.df = pd.read_csv('iris.csv')
+        self.df = pd.read_csv('app/iris.csv')
         self.model_fname_ = 'iris_model.pkl'
         try:
             self.model = joblib.load(self.model_fname_)
