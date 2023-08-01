@@ -30,7 +30,6 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-          pip install pytest # Add this line
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       - name: Test with pytest
         run: |
