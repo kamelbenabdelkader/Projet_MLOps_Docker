@@ -43,7 +43,7 @@ def connect():
 # 3. Index route, opens automatically on http://127.0.0.1:8000
 @app.get('/')
 def index():
-    return {'message': 'Hello, Guys'}
+    return {'message': 'Hello, WORLD'}
 
 
 # 5. Expose the prediction functionality, make a prediction from the passed
@@ -61,7 +61,7 @@ def predict_species(iris: IrisSpecies):
 
 
 
-@app.post("/test")
+@app.post("/add")
 async def create_item(item:  Prediction):
     # Perform operations on the database
     conn = connect()
