@@ -61,13 +61,13 @@ def predict_species(iris: IrisSpecies):
 
 
 
-@app.post("/add")
+@app.post("/test")
 async def create_item(item:  Prediction):
     # Perform operations on the database
     conn = connect()
     with conn.cursor() as cursor:
         query = "INSERT INTO prediction (prediction, probability) " \
-                 "VALUES (%s, %s,)"
+                 "VALUES (%s, %s)"
         values = (item.prediction, item.probability)
         cursor.execute(query, values)
         conn.commit()
