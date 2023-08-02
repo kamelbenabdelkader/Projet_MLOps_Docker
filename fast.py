@@ -19,7 +19,7 @@ model = IrisModel()
 # 3. Index route, opens automatically on http://127.0.0.1:8000
 @app.get('/')
 def index():
-    return {'message': 'Hello, Friend'}
+    return {'message': 'Hello, pote'}
 
 
 # 5. Expose the prediction functionality, make a prediction from the passed
